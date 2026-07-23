@@ -3,11 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Website</title>
+    <meta name="description" content="Personal portfolio landing page for Muhammad Syafiq, focused on IT support and Java backend development roles.">
+    <title>Muhammad Syafiq | Portfolio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <h1>Muhammad Syafiq</h1>
-    <p>Welcome to my Website</p>
-    <a class="btn" href="myportfolio.html">Enter</a>
+    <header class="site-header">
+        <div class="container navbar">
+            <a class="brand" href="index.html">Muhammad Syafiq</a>
+            <button class="menu-toggle" aria-label="Toggle navigation">Menu</button>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="myportfolio.html">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-copy reveal">
+                    <p class="badge">IT Support • Application Support • System Support • Junior Java Developer</p>
+                    <h1>Reliable support, practical systems knowledge, and a foundation in Java.</h1>
+                    <p>
+                        Computer Science graduate with 2+ years of IT Technical Support experience. I focus on
+                        stable service delivery, troubleshooting, monitoring, and backend development fundamentals
+                        that support business continuity and technical operations.
+                    </p>
+                    <div class="cta-row">
+                        <a class="btn btn-primary" href="myportfolio.html">View My Portfolio</a>
+                        <a class="btn btn-secondary" href="#contact">Contact Me</a>
+                    </div>
+                    <div class="contact-list" id="contact">
+                        <a class="contact-link" href="mailto:syafiqir99@gmail.com">Email</a>
+                        <a class="contact-link" href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
+                        <a class="contact-link" href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>
+                    </div>
+                </div>
+
+                <div class="hero-card glass-card reveal">
+                    <div class="hero-visual" aria-hidden="true"></div>
+                    <div class="badge-row" style="margin-top: 1rem;">
+                        <span class="badge">Windows</span>
+                        <span class="badge">Linux</span>
+                        <span class="badge">Java</span>
+                        <span class="badge">MongoDB</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="container reveal" style="padding-bottom: 4rem;">
+            <div class="glass-card profile-card">
+                <h2 class="section-title">Short About Me</h2>
+                <p>
+                    I combine practical IT support experience with a strong interest in systems administration,
+                    application support, and backend development. My approach is simple, professional, and focused on
+                    keeping business systems stable and efficient.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
