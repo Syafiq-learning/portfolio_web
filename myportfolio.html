@@ -5,13 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Interactive portfolio CV for Muhammad Syafiq focused on IT support, system support, application support, and Java development.">
     <title>Muhammad Syafiq | Interactive CV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <header class="site-header">
         <div class="container navbar">
-            <a class="brand" href="index.html">Muhammad Syafiq</a>
+            <a class="brand" href="myportfolio.html">Muhammad Syafiq</a>
             <button class="menu-toggle" aria-label="Toggle navigation">Menu</button>
+            <button class="theme-toggle" type="button" aria-pressed="false">Dark mode</button>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
@@ -53,46 +57,46 @@
         <section id="skills" class="container reveal">
             <h2 class="section-title">Technical Skills</h2>
             <p class="section-subtitle">Core technologies and tools aligned to support, administration, and development work.</p>
-            <div class="two-column">
+            <div class="skills-grid">
                 <article class="glass-card skill-card">
                     <h3>Operating Systems</h3>
-                    <ul class="plain-list">
-                        <li>Windows</li>
-                        <li>Linux</li>
-                    </ul>
+                    <div class="skill-chip-list">
+                        <span class="skill-chip">Windows</span>
+                        <span class="skill-chip">Linux</span>
+                    </div>
                 </article>
 
                 <article class="glass-card skill-card">
                     <h3>Programming</h3>
-                    <ul class="plain-list">
-                        <li>Java</li>
-                        <li>Python</li>
-                        <li>PHP</li>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                    </ul>
+                    <div class="skill-chip-list">
+                        <span class="skill-chip">Java</span>
+                        <span class="skill-chip">Python</span>
+                        <span class="skill-chip">PHP</span>
+                        <span class="skill-chip">HTML</span>
+                        <span class="skill-chip">CSS</span>
+                        <span class="skill-chip">JavaScript</span>
+                    </div>
                 </article>
 
                 <article class="glass-card skill-card">
                     <h3>Database</h3>
-                    <ul class="plain-list">
-                        <li>MongoDB</li>
-                        <li>MySQL</li>
-                    </ul>
+                    <div class="skill-chip-list">
+                        <span class="skill-chip">MongoDB</span>
+                        <span class="skill-chip">MySQL</span>
+                    </div>
                 </article>
 
                 <article class="glass-card skill-card">
-                    <h3>Tools</h3>
-                    <ul class="plain-list">
-                        <li>VMware vCenter</li>
-                        <li>Zabbix</li>
-                        <li>Dynatrace</li>
-                        <li>Remote Desktop</li>
-                        <li>Power BI</li>
-                        <li>Git</li>
-                        <li>GitHub</li>
-                    </ul>
+                    <h3>Monitoring & Tools</h3>
+                    <div class="skill-chip-list">
+                        <span class="skill-chip">VMware vCenter</span>
+                        <span class="skill-chip">Zabbix</span>
+                        <span class="skill-chip">Dynatrace</span>
+                        <span class="skill-chip">Remote Desktop</span>
+                        <span class="skill-chip">Power BI</span>
+                        <span class="skill-chip">Git</span>
+                        <span class="skill-chip">GitHub</span>
+                    </div>
                 </article>
             </div>
         </section>
@@ -181,9 +185,23 @@
 
         <section id="education" class="container reveal">
             <h2 class="section-title">Education</h2>
-            <div class="glass-card info-card">
-                <h3>Bachelor of Computer Science</h3>
-                <p>UiTM</p>
+            <div class="education-list">
+                <article class="glass-card info-card">
+                    <div class="education-head">
+                        <h3>Bachelor of Computer Science (Hons.)</h3>
+                        <span class="education-date">Sept 2020 - Mar 2023</span>
+                    </div>
+                    <p>Universiti Teknologi Mara (UiTM)</p>
+                    <p><strong>CGPA:</strong> 3.20</p>
+                </article>
+                <article class="glass-card info-card">
+                    <div class="education-head">
+                        <h3>Diploma in Computer Science</h3>
+                        <span class="education-date">Jun 2017 - Feb 2020</span>
+                    </div>
+                    <p>Universiti Teknologi Mara (UiTM)</p>
+                    <p><strong>CGPA:</strong> 3.15</p>
+                </article>
             </div>
         </section>
 
@@ -204,11 +222,13 @@
         <section id="contact" class="container reveal">
             <h2 class="section-title">Contact</h2>
             <div class="contact-grid">
-                <a class="glass-card contact-card" href="https://www.linkedin.com" target="_blank" rel="noreferrer">
+                <a class="glass-card contact-card" href="https://www.linkedin.com/in/muhammad-syafiq-ismail-reduan" target="_blank" rel="noreferrer" aria-label="LinkedIn (opens in a new tab)">
+                    <svg class="external-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9" /></svg>
                     <h3>LinkedIn</h3>
                     <p>Professional profile</p>
                 </a>
-                <a class="glass-card contact-card" href="https://github.com" target="_blank" rel="noreferrer">
+                <a class="glass-card contact-card" href="https://github.com/Syafiq-learning" target="_blank" rel="noreferrer" aria-label="GitHub (opens in a new tab)">
+                    <svg class="external-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9" /></svg>
                     <h3>GitHub</h3>
                     <p>Code repositories</p>
                 </a>
@@ -221,7 +241,7 @@
     </main>
 
     <footer class="container footer-note">
-        <p>Designed for IT support, application support, system support, and junior Java development opportunities.</p>
+        <p>Designed for IT Support, Application Support, System Support, and Junior Java Developer opportunities.</p>
     </footer>
 
     <script src="assets/js/script.js"></script>
